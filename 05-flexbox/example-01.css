@@ -1,0 +1,89 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 1rem 1.62rem;
+}
+
+.logos-container {
+  display: flex;
+  border: 1px solid red;
+
+  /* justify-content: alignment on primary axis (x-axis when in row, y-axis when in column) */
+
+  /* at the start of the main axis */
+  /*justify-content: flex-start;*/
+
+  /* at the center of the main axis */
+  /*justify-content: center;*/
+
+   /*at the end of the main axis */
+  /*justify-content: flex-end;*/
+
+  /* x between items, half of x on the edges */
+  justify-content: space-around;
+
+  /* even spacing between items, no edge spacing */
+  /*justify-content: space-between;*/
+
+  /* even spacing between items and edges */
+  /*justify-content: space-evenly;*/
+
+
+  /* align-items: alignment on secondary axis (y-axis when in row, x-axis when in column) */
+
+  /* taking all available space */
+  /*align-items: stretch;*/
+
+  /* at the start of the secondary axis */
+  /*align-items: flex-start;*/
+
+  /* at the center of the secondary axis */
+  align-items: center;
+
+  /* at the end of the secondary axis */
+  /*align-items: flex-end;*/
+
+  /* css counter */
+  counter-reset: logos;
+
+}
+
+.logo {
+  position: relative;
+  margin: 0;
+
+  /* flex-basis: the dimension of your container towards the main axis (width if row direction / height if column direction ) */
+  flex-basis: 20%;
+  border: 1px solid green;
+}
+
+.logo:before {
+  counter-increment: logos;
+  content: counter(logos);
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  color: white;
+  background: rgba(0, 0, 0, .5);
+}
+
+.logo__image {
+  display: block;
+  max-width: 100%;
+}

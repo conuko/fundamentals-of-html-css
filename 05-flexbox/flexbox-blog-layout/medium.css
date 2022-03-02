@@ -1,0 +1,11 @@
+@media screen and (min-width: 40em) {
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .article {
+    flex-basis: calc(50% - 30px); /* subtracting left and right margins otherwise it breaks into next row */
+    margin: 0 15px 60px 15px;
+  }
+}

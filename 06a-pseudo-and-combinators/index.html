@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>pseudo stuff</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+<section>
+  <h1>dealing with children, pt. 1</h1>
+  <h2>:first-child and :last-child</h2>
+
+  <div class="example example--before">
+    <p>As part of the Northern Silk Road running northwest from the western section of the Ordos Loop between Yinchuan and Lanzhou, the Hexi Corridor was the most important trade route in Northwest China, linking China proper to the historic Western Regions for traders and military incursions into Central Asia. It is a string of oases along the northern edges of the Qilian Mountains and Altyn-Tagh, with the high and desolate Tibetan Plateau further to the south. To the north are the Longshou, Heli and Mazong Mountains separating it from the arid Badain Jaran Desert, Gobi Desert and the cold steppes of the </p>
+  </div>
+</section>
+
+<section>
+  <h1>dealing with children, pt. 1</h1>
+  <h2>:first-child and :last-child</h2>
+
+  <div class="example example--children1">
+    <p>1st sheep: Alonzo</p>
+    <p>2nd sheep: Francesca</p>
+    <p>3rd sheep: Suzanne</p>
+    <p>4th sheep: Henry</p>
+  </div>
+</section>
+
+<section>
+  <h1>dealing with children, pt. 2</h1>
+  <h2>:only-child</h2>
+
+  <div class="example example--children2">
+    <p>1st sheep: Alonzo</p>
+  </div>
+
+  <h2>:nth-child</h2>
+  <div class="example example--children3">
+    <p>1st sheep: Alonzo</p>
+    <p>2nd sheep: Francesca</p>
+    <p>3rd sheep: Suzanne</p>
+    <p>4th sheep: Henry</p>
+    <p>5th sheep: Zoe</p>
+    <p>6th sheep: Ziggy</p>
+    <p>7th sheep: Rafa</p>
+    <p>8th sheep: Izabel</p>
+    <p>9th sheep: Zouzou</p>
+  </div>
+</section>
+
+<section>
+  <h1>Vegan or not vegan, that is the question</h1>
+  <h2>:not</h2>
+
+  <div class="example example--not">
+    <p class="vegan">olive oil</p>
+    <p class="vegan">cauliflower</p>
+    <p class="not-vegan">salmon</p>
+    <p class="vegan">almonds</p>
+  </div>
+</section>
+
+<section>
+  <h1>Adding some emphasis</h1>
+  <h2>::first-line</h2>
+
+  <div class="example example--first-line">
+    <p>
+      As part of the Northern Silk Road running northwest from the western section of the Ordos Loop between Yinchuan
+      and Lanzhou, the Hexi Corridor was the most important trade route in Northwest China, linking China proper to the
+      historic Western Regions for traders and military incursions into Central Asia. It is a string of oases along the
+      northern edges of the Qilian Mountains and Altyn-Tagh, with the high and desolate Tibetan Plateau further to the
+      south. To the north are the Longshou, Heli and Mazong Mountains separating it from the arid Badain Jaran Desert,
+      Gobi Desert and the cold steppes of the Mongolian Plateau. At the western end, the route splits into three, going
+      either north of the Tianshan Mountains or south on either side of the Tarim Basin. At the eastern end, the
+      mountains around Lanzhou grants access to the Longxi Basin, which leads east through Mount Long along the Wei
+      River valley into the populous Guanzhong Plain, and then into the Central Plain.
+    </p>
+  </div>
+
+  <h2>::placeholder</h2>
+  <div class="example example--placeholder">
+    <label for="name">your name</label>
+    <input id="name" type="text" placeholder="Say my name">
+  </div>
+</section>
+
+<section>
+  <h1>Using combinators</h1>
+  <h2>&gt;, + and ~</h2>
+
+  <div class="example example--combinators">
+    <ul class="sports">
+      <li class="sport sport--tennis">
+        Tennis
+        <ul>
+          <li>racket</li>
+          <li>balls</li>
+          <li>tennis shoes</li>
+          <li>court</li>
+          <li>partner(s)</li>
+        </ul>
+      </li>
+      <li class="sport sport--yoga">
+        Yoga
+        <ul>
+          <li>mat</li>
+          <li>blocks</li>
+          <li>belt</li>
+          <li>pillow</li>
+        </ul>
+      </li>
+      <li class="sport sport--swimming">
+        swimming
+        <ul>
+          <li>swimsuit / shorts</li>
+          <li>goggles</li>
+          <li>swim cap</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+</body>
+
+</html>

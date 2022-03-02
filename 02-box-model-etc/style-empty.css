@@ -1,0 +1,54 @@
+html {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.action-list {
+}
+
+.action {
+  position: relative;
+}
+
+.action:hover {
+}
+
+.action:hover .action__label {
+}
+
+.action__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 100%;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.action__icon .fa {
+  position: absolute;
+
+  /* technique for centering things */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.action__label {
+  display: block;
+  margin-left: 64px;
+  margin-right: 16px;
+  transition: all 0.3s ease-out;
+
+  /* how to dot out text */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,112 @@
+html {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px; /* corresponds to 1em */
+  transition: all 0.5s ease-out;
+  background-color: #f7f7f7;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.action-list {
+}
+
+.action {
+  position: relative;
+  margin: 0 0 16px 0;
+  padding: 16px 0;
+  border: 1px solid black;
+  background-color: #ffd700;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.action:hover {
+  background-color: #ffe814;
+}
+
+.action:hover .action__label {
+  transform: translateX(8px);
+}
+
+.action__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 100%;
+  color: white;
+  background-color: #9400d3;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.action__icon .fa {
+  position: absolute;
+
+  /* technique for centering things */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.action__label {
+  display: block;
+  margin-left: 64px;
+  margin-right: 16px;
+  transition: all 0.3s ease-out;
+
+  /* how to dot out text */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 480px) {
+/*@media (min-width: 40em) {*/
+
+  html {
+    background-color: #d2d2d2;
+    background-color: #ccc;
+  }
+
+  .action {
+    float: left;
+    width: calc(50% - 8px - 8px); /* take into account left/right margins! */
+    width: 50%;
+    /*margin: 0 8px 16px 8px;*/
+  }
+
+}
+
+@media (min-width: 72em) {
+
+  html {
+    font-size: 20px;
+    background-color: #4b4b4b;
+  }
+
+  .action {
+    width: calc(100% / 3);
+    margin: 0;
+    padding: 24px 0;
+    border-color: #5f008e;
+    border-style: none none solid none;
+    border-width: 2px;
+  }
+
+  .action:last-child {
+    width: 100%;
+    text-align: center;
+  }
+
+  .action__icon {
+    width: 64px;
+  }
+
+  .action__label {
+    margin-left: 80px;
+  }
+
+}

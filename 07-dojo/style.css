@@ -1,0 +1,146 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica Neue", "Helvetica", serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+
+header {
+  display: flex;
+  margin: 0 40px;
+  padding: 28px 40px;
+  border-radius: 40px;
+  background-color: #000;
+}
+
+.logo {
+  margin: 0;
+  flex-basis: 140px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main-nav {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 80px;
+}
+
+.nav-item,
+.more-nav-item {
+  padding-bottom: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item {
+  margin-right: 32px;
+}
+
+.nav-item:hover,
+.more-nav-item:hover {
+  border-color: #FFFF38;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+
+.nav-item--more {
+  display: none;
+  position: relative;
+  border: 1px solid yellow;
+}
+
+.nav-item--more:after {
+  content: "…";
+}
+
+.nav-item--more:hover .more-nav {
+  display: block;
+}
+
+.more-nav {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: -32px;
+  /*top: 0;*/
+  /*left: 0;*/
+  padding: 32px;
+  background-color: #000;
+  border: 1px solid deeppink;
+}
+
+.more-nav-item {
+  display: block;
+}
+
+.search {
+  flex-basis: 200px;
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.search-field {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-style: none none solid none;
+}
+
+.search-field::placeholder {
+  color: #fff;
+}
+
+@media (max-width: 1376px) {
+
+  .nav-item:nth-child(6) {
+    display: none;
+  }
+
+  .nav-item--more {
+    display: inline-flex;
+  }
+
+  .more-nav-item {
+    display: none;
+  }
+
+  .more-nav-item:nth-child(4) {
+    display: block;
+  }
+}
+
+@media (max-width: 1238px) {
+
+  .nav-item:nth-child(5),
+  .nav-item:nth-child(6) {
+    display: none;
+  }
+
+  .more-nav-item {
+    display: none;
+  }
+
+  .more-nav-item:nth-child(3),
+  .more-nav-item:nth-child(4) {
+    display: block;
+  }
+}

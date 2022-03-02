@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>images with srcset</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style-images-srcset.css" type="text/css">
+</head>
+
+<body>
+
+  <div class="image-block">
+    <h1>standard image</h1>
+
+    <img
+      class="image-0"
+      src="https://via.placeholder.com/1600x900?text=1600x900">
+  </div>
+
+  <div class="image-block">
+    <h1>srcset default</h1>
+
+    <img
+      class="image-1"
+      srcset="https://via.placeholder.com/1600x900?text=1600x900 1600w,
+              https://via.placeholder.com/1200x675?text=1200x675 1200w,
+              https://via.placeholder.com/800x450?text=800x450 800w"
+      src="https://via.placeholder.com/800x450?text=800x450">
+  </div>
+
+  <div class="image-block">
+    <h1>srcset with sizes attribute</h1>
+    
+    <img
+      class="image-2"
+      srcset="https://via.placeholder.com/1600x900?text=1600x900 1600w,
+              https://via.placeholder.com/1200x675?text=1200x675 1200w,
+              https://via.placeholder.com/800x450?text=800x450 800w"
+      sizes="50vw"
+      src="https://via.placeholder.com/800x450?text=800x450">
+  </div>
+
+
+</body>
+
+</html>

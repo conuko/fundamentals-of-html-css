@@ -1,0 +1,84 @@
+html {
+  transition: all 0.5s ease-out;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* we're position the split view outside the regular flow, making it take up the whole viewport */
+.split-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+
+.box {
+  position: relative; /* this is necessary for the overlay, don't worry about it for now */
+  width: 50vw;
+  height: 100%;
+  float: left; /* with float, elements take up only as much width as given, they kinda float around */
+}
+
+/* the overlay needs to go over the image, imagine it like a layer above the box */
+.box__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box-1 {
+  background-image: url('https://via.placeholder.com/800x1200.png');  /* handy for placeholder images */
+  background-position: center;
+  /*background-size: cover; !* see https://cssreference.io/property/background-size/ *!*/
+  font-family: "xxx", serif; /* choose your typeface */
+}
+
+.box-1 .box__overlay {
+  background-color: rgba(96, 155, 116, 0.7);
+}
+
+.box-1 .box__title {
+  margin: 0.5em 0.8em;
+  color: #fff;
+}
+
+.box-2 {
+  background-image: url('https://via.placeholder.com/800x1200.png');
+  background-position: center;
+  background-size: cover;
+  font-family: "xxx", sans-serif; /* choose your typeface */
+}
+
+.box-2 .box__overlay {
+  background-color: rgba(0, 157, 157, 0.7);
+}
+
+.box-2 .box__title {
+  text-align: right;
+  margin: 0.5em 0.8em;
+  color: #fff;
+}
+
+@media (orientation: portrait) {
+
+  .box {
+    width: auto;
+    height: 50vh;
+    float: none;
+  }
+
+  .box-1 {
+    background-image: url('https://via.placeholder.com/1200x800.png');
+  }
+
+  .box-2 {
+    background-image: url('https://via.placeholder.com/1200x800.png');
+  }
+
+}

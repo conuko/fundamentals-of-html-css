@@ -1,0 +1,114 @@
+html {
+  font-family: "Roboto Mono", monospace;
+}
+
+section {
+  margin-bottom: 3em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  color: lightslategray;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+.example--before {
+  position: relative;
+}
+
+.example--before p {
+  /*margin-left: 30px;*/
+}
+
+.example--before p::before {
+  /*content: "";*/
+  /*display: block;*/
+  /*width: 20px;*/
+  /*height: 20px;*/
+  /*background-color: red;*/
+}
+
+.example--before p::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: red;
+}
+
+.example--children1 :first-child {
+  color: goldenrod;
+}
+
+.example--children1 p:last-child {
+  color: white;
+  background-color: #111;
+}
+
+.example--children2 p:only-child::after {
+  content: "I'm the Einzelkind";
+  font-size: 0.7em;
+  margin-left: 0.7em;
+}
+
+.example--children3 p:nth-child(even) { /* count starts at 1 */
+  /*color: mediumslateblue;*/
+}
+
+/*.example--children3 p:nth-child(2n) { !* 0, 2, 4, 6, … *!*/
+/*.example--children3 p:nth-child(3n) { !* 0, 3, 6, … *!*/
+.example--children3 p:nth-child(3n+1) { /* 1, 4, 7, … */
+  color: darkred;
+}
+
+.example--not p:not(.vegan) {
+  text-decoration: line-through;
+}
+
+.example--first-line p::first-line {
+  font-size: 1.5em;
+  color: cadetblue;
+}
+
+.example--placeholder input {
+  padding: 0.3em 0.5em;
+  border: 1px solid black;
+  border-style: none none solid none;
+  font-size: 2em;
+}
+
+.example--placeholder input::placeholder {
+  font-style: italic;
+  color: lightsalmon;
+  text-shadow: 1px 1px 2px #555;
+}
+
+ul {
+  color: black;
+}
+
+/*.sports li { !* all descendants *!*/
+  /*color: green;*/
+/*}*/
+
+/*.sports > li { !* direct children, not children of children *!*/
+  /*color: green;*/
+/*}*/
+
+/*.sport--tennis + .sport { !* adjacent sibling only! *!*/
+  /*color: green;*/
+/*}*/
+
+/*.sport--yoga ~ .sport { !* all siblings, only coming after yoga though *!*/
+  /*color: green;*/
+/*}*/

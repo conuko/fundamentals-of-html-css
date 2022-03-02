@@ -1,0 +1,22 @@
+@import "_reset";
+@import "_variables";
+
+html {
+  color: $primary-color;
+}
+
+ul {
+  margin: 0 0 0 50px;
+
+  & li {
+    color: green;
+
+    &::before {
+      content: "1 ";
+    }
+  }
+}
+
+//ul li {
+//  color: green;
+//}

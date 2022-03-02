@@ -1,0 +1,77 @@
+/* all your CSS goes here */
+/*@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');*/
+
+html {
+  font-family: Baskerville, serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+div {
+  /*font-size: 16px;*/
+  font-size: 1em;
+}
+
+div ul {
+  font-size: 2rem;
+}
+
+/*body {*/
+  /*width: 60ch;*/
+  /*margin: 0 auto;*/
+/*}*/
+
+/*img {*/
+  /*max-width: 100%;*/
+/*}*/
+
+/*h1 {*/
+  /*line-height: 1.3;*/
+  /*font-weight: bold;*/
+  /*text-transform: uppercase;*/
+  /*font-family: 'Fascinate', cursive;*/
+  /*color: #ff705e;*/
+  /*letter-spacing: 0.04em;*/
+  /*font-size: 3rem;*/
+/*}*/
+
+/*h2 {*/
+/*}*/
+
+/*h2::before {*/
+  /*content: "»";*/
+/*}*/
+
+/*h2::after {*/
+  /*content: "«";*/
+/*}*/
+
+/*h2::first-letter {*/
+  /*color: red;*/
+  /*font-size: 2em;*/
+/*}*/
+
+/*h3 {*/
+
+/*}*/
+
+/*.hero-headline {*/
+
+/*}*/
+
+/*.hero-headline-home {*/
+
+/*}*/
+
+/*p {*/
+
+  /*text-align: justify;*/
+/*}*/
+
+/*a {*/
+
+/*}*/
+
+/*img {*/
+
+/*}*/
