@@ -1,1 +1,3 @@
-# fundamentals-of-html-css
+# Fundamentals of HTML / CSS
+
+Accompanying repository for the LU.
