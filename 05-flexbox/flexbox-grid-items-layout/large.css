@@ -1,0 +1,13 @@
+@media screen and (min-width: 64em) {
+  .articles {
+    gap: 24px;
+  }
+
+  .article {
+    /* 
+    need to subtract a third of the flex gap for each article
+    because i have 3 items per row and 2 * 24 = 48px gap total
+    */
+    flex-basis: calc(100% / 3 - 16px);
+  }
+}

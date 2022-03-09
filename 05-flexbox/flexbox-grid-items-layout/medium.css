@@ -1,0 +1,13 @@
+@media screen and (min-width: 40em) {
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .article {
+    /* need to subtract half of the flex gap for each article */
+    flex-basis: calc(50% - 8px);
+    margin-bottom: 60px;
+  }
+}
