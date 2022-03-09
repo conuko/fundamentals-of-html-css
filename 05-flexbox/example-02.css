@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -42,7 +44,6 @@ main {
 
   /* css counter */
   counter-reset: logos;
-
 }
 
 .logo {
@@ -64,7 +65,7 @@ main {
   width: 24px;
   height: 24px;
   color: white;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .logo__image {

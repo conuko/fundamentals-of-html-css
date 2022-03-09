@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -29,18 +31,17 @@ main {
   /* at the center of the main axis */
   /*justify-content: center;*/
 
-   /*at the end of the main axis */
+  /*at the end of the main axis */
   /*justify-content: flex-end;*/
 
   /* x between items, half of x on the edges */
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   /* even spacing between items, no edge spacing */
   /*justify-content: space-between;*/
 
   /* even spacing between items and edges */
   /*justify-content: space-evenly;*/
-
 
   /* align-items: alignment on secondary axis (y-axis when in row, x-axis when in column) */
 
@@ -58,7 +59,6 @@ main {
 
   /* css counter */
   counter-reset: logos;
-
 }
 
 .logo {
@@ -80,7 +80,7 @@ main {
   width: 24px;
   height: 24px;
   color: white;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .logo__image {
